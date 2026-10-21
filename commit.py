@@ -57,4 +57,17 @@ class Repositorio:
             atual = atual.pai
             
         return contador
-    
+
+repositorio = Repositorio("meu-projeto", "Paulo Henrique - 6326092")
+
+repositorio.log()
+
+repositorio.commitar("Commit inicial")
+
+repositorio.commitar("Adiciona o primeiro modulo")
+
+repositorio.commitar("testa o primeiro modulo")
+
+repositorio.log()
+
+print(repositorio.total_de_commits())
